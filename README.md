@@ -10,7 +10,7 @@
 
 ## 编译升级固件步骤
 
-1. [**Actions**](https://github.com/x7780/immortalwrt-Actios/actions) → **Build_imm_高通410系列** → **Run workflow** → 选择设备型号 → 填写需要插件包 → 开始编译
+1. [**Actions**](https://github.com/x7780/immortalwrt-Actios/actions) → **Build_imm_高通410系列** → **Run workflow** → 选择设备型号 → 填写需要插件包 → Run workflow 开始编译
 ![编译教程](img/1.png)
 
 2. 编译约⏱️ 1.5-2 小时，插件越多时间越长.
