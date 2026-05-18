@@ -13,6 +13,10 @@
 # 修改默认主题为 argon（路径不存在时跳过，不中断编译）
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile 2>/dev/null || true
 
+# 启用 IPv4 策略路由
+grep -q 'KERNEL_IP_MULTIPLE_TABLES' .config || echo 'CONFIG_KERNEL_IP_MULTIPLE_TABLES=y' >> .config
+grep -q 'KERNEL_IP_ADVANCED_ROUTER' .config || echo 'CONFIG_KERNEL_IP_ADVANCED_ROUTER=y' >> .config
+
 
 # 临时添加的插件
 # git clone https://github.com/lkiuyu/luci-app-cpu-perf package/luci-app-cpu-perf
